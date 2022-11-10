@@ -34,9 +34,9 @@ app.use(
     // resave: false, --> resave reload sans garder la session en cours (username et pw inexistant du coup!)
     // saveUninitialized: true,
     cookie: {
-      sameSite: "none",
-      secure: true,
-      httpOnly: true,
+      //sameSite: "none",
+      //secure: true,
+      //httpOnly: true,
       maxAge: 1000 * 60 * 60,
     },
     store: MongoStore.create({
